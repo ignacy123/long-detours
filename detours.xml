@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230503102850"/>
+<info created="D:20230503102830" modified="D:20230503142812"/>
+<preamble>\usepackage{polski}</preamble>
 <ipestyle name="cpres">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -279,5 +280,637 @@ h
 1216 400 l
 h
 </path>
+</page>
+<page title="Wstęp">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<text layer="alpha" matrix="1 0 0 1 0 32" pin="h" transformations="translations" pos="0 537.028" stroke="black" type="minipage" width="1216" height="22.8368" depth="8.904" valign="top" style="itemize">Fixed Parameter Tractable: $f(k)n^{O(1)}$ </text>
+<text layer="beta" matrix="1 0 0 1 0 28.6761" pin="h" transformations="translations" pos="0 474.596" stroke="black" type="minipage" width="1216" height="19.3928" depth="5.404" valign="top" style="item">Czy w wejściowym grafie $G$ istnieje klika wielkości $k$?</text>
+<text layer="gamma" matrix="1 0 0 1 0 65.8642" pin="h" transformations="translations" pos="0 378.596" stroke="black" type="minipage" width="1216" height="19.3928" depth="5.404" valign="top" style="item">Czy wejściowa maszyna Turinga zatrzymuje się po co najwyżej $k$ krokach?</text>
+<text layer="delta" matrix="1 0 0 1 0 63.849" pin="h" transformations="translations" pos="0 321.799" stroke="black" type="minipage" width="1216" height="19.3928" depth="5.404" valign="top" style="item">Czy w wejściowym grafie $G$ znajduje się ścieżka długości dokładnie $k$?</text>
+<text layer="epsilon" matrix="1 0 0 1 0 61.8339" pin="h" transformations="translations" pos="0 265.002" stroke="black" type="minipage" width="1216" height="36.8592" depth="22.96" valign="top" style="item">Czy między danymi wierzchołkami $s$ oraz $t$ w grafie $G$ istnieje ścieżka długości \emph{dokładnie} ${\sf dist}_G(s, t) + k$?</text>
+<text layer="zeta" matrix="1 0 0 1 0 -32" pin="h" transformations="translations" pos="0 265.002" stroke="black" type="minipage" width="1216" height="36.8592" depth="22.96" valign="top" style="item">Czy między danymi wierzchołkami $s$ oraz $t$ w grafie $G$ istnieje ścieżka długości \emph{przynajmniej} ${\sf dist}_G(s, t) + k$?</text>
+<group matrix="1 0 0 1 128 0">
+<use name="mark/disk(sx)" pos="128 128" size="normal" stroke="seagreen"/>
+<use name="mark/disk(sx)" pos="224 80" size="normal" stroke="seagreen"/>
+<use name="mark/disk(sx)" pos="176 32" size="normal" stroke="seagreen"/>
+<use name="mark/disk(sx)" pos="80 80" size="normal" stroke="seagreen"/>
+<use name="mark/disk(sx)" pos="96 32" size="normal" stroke="seagreen"/>
+<use name="mark/disk(sx)" pos="160 80" size="normal" stroke="seagreen"/>
+<use name="mark/disk(sx)" pos="128 128" size="normal" stroke="seagreen"/>
+<path stroke="seagreen">
+128 128 m
+160 80 l
+</path>
+<path stroke="seagreen">
+160 80 m
+80 80 l
+</path>
+<path stroke="seagreen">
+80 80 m
+176 32 l
+</path>
+<path stroke="seagreen">
+96 32 m
+224 80 l
+</path>
+<path stroke="seagreen">
+176 32 m
+128 128 l
+</path>
+<path stroke="seagreen">
+224 80 m
+128 128 l
+</path>
+</group>
+<group matrix="1 0 0 1 160 0">
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="128 128" size="normal" stroke="brown"/>
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="224 80" size="normal" stroke="brown"/>
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="176 32" size="normal" stroke="brown"/>
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="80 80" size="normal" stroke="brown"/>
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="96 32" size="normal" stroke="brown"/>
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="160 80" size="normal" stroke="brown"/>
+<use matrix="1 0 0 1 544 0" name="mark/disk(sx)" pos="128 128" size="normal" stroke="brown"/>
+<path matrix="1 0 0 1 544 0" stroke="brown" arrow="normal/normal">
+128 128 m
+160 80 l
+</path>
+<path matrix="1 0 0 1 544 0" stroke="brown" arrow="normal/normal">
+160 80 m
+80 80 l
+</path>
+<path matrix="1 0 0 1 544 0" stroke="brown" arrow="normal/normal">
+80 80 m
+176 32 l
+</path>
+<path matrix="1 0 0 1 544 0" stroke="brown" rarrow="normal/normal">
+96 32 m
+224 80 l
+</path>
+<path matrix="1 0 0 1 544 0" stroke="brown" rarrow="normal/normal">
+176 32 m
+128 128 l
+</path>
+<path matrix="1 0 0 1 544 0" stroke="brown" arrow="normal/normal">
+224 80 m
+128 128 l
+</path>
+</group>
+</page>
+<page title="Kontrybucja autorów">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<group layer="alpha" matrix="1 0 0 1 -16 -32">
+<group matrix="1 0 0 1 8.05234 7.83001">
+<text transformations="translations" pos="64 608" stroke="black" type="label" width="242.236" height="19.3928" depth="5.404" valign="baseline">$p$-DISJOINT PATHS</text>
+<text matrix="1 0 0 1 0 -12.6134" transformations="translations" pos="64 576" stroke="black" type="label" width="433.502" height="19.3928" depth="5.404" valign="baseline">$\textbf{Wejście}$: Graf $G$ oraz $p$ par terminali</text>
+<text matrix="0.999638 0.0269045 -0.0269045 0.999638 11.331 56.6178" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="69.5268" depth="55.692" valign="top">$\textbf{Pytanie}:$ Czy w $G$ istnieje $p$ rozłącznych wierzchołkowo ścieżek (poza końcami), które łączą pary terminali ze sobą?</text>
+</group>
+<path matrix="1 0 0 0.933333 0 42.6667" stroke="darkgray" dash="dashed">
+64 640 m
+64 400 l
+512 400 l
+512 640 l
+h
+</path>
+</group>
+<path stroke="black">
+640 512
+736 624
+1136 608
+1136 272
+624 304 u
+</path>
+<path stroke="green">
+976 352 m
+1136 352
+1136 512
+1040 512 c
+</path>
+<path stroke="blue">
+784 544 m
+832 528
+880 528
+928 544 c
+</path>
+<group>
+<use name="mark/disk(sx)" pos="976 352" size="normal" stroke="green"/>
+<text matrix="1 0 0 1 262 -183" transformations="translations" pos="720 544" stroke="green" type="label" width="25.5892" height="12.0232" depth="4.172" valign="baseline" style="math">s_4</text>
+</group>
+<group>
+<use name="mark/disk(sx)" pos="1040 512" size="normal" stroke="green"/>
+<text matrix="1 0 0 1 326 -23" transformations="translations" pos="720 544" stroke="green" type="label" width="22.5876" height="17.1696" depth="4.172" valign="baseline" style="math">t_4</text>
+</group>
+<group>
+<use matrix="1 0 0 1 80 16" name="mark/disk(sx)" pos="704 528" size="normal" stroke="blue"/>
+<text matrix="1 0 0 1 70 9" transformations="translations" pos="720 544" stroke="blue" type="label" width="25.5892" height="12.0232" depth="4.172" valign="baseline" style="math">s_5</text>
+</group>
+<group>
+<path stroke="brown">
+704 528 m
+752 432
+864 512
+928 432 c
+</path>
+<group>
+<use name="mark/disk(sx)" pos="704 528" size="normal" stroke="brown"/>
+<text matrix="1 0 0 1 -10 -7" transformations="translations" pos="720 544" stroke="brown" type="label" width="25.5892" height="12.0232" depth="4.172" valign="baseline" style="math">s_1</text>
+</group>
+<group>
+<use matrix="1 0 0 1 224 -96" name="mark/disk(sx)" pos="704 528" size="normal" stroke="brown"/>
+<text matrix="1 0 0 1 214 -103" transformations="translations" pos="720 544" stroke="brown" type="label" width="22.5876" height="17.1696" depth="4.172" valign="baseline" style="math">t_1</text>
+</group>
+</group>
+<path stroke="orange">
+688 432 m
+960 320
+1024 464
+1008 528
+928 544 c
+</path>
+<group>
+<use name="mark/disk(sx)" pos="688 432" size="normal" stroke="orange"/>
+<text matrix="1 0 0 1 -26 -103" transformations="translations" pos="720 544" stroke="orange" type="label" width="25.5892" height="12.0232" depth="4.172" valign="baseline" style="math">s_2</text>
+</group>
+<use name="mark/disk(sx)" pos="928 544" size="normal" stroke="darkgreen"/>
+<text matrix="1 0 0 1 166.816 9" transformations="translations" pos="720 544" stroke="orange" type="label" width="82.3676" height="17.1696" depth="4.172" valign="baseline" style="math">t_2 = t_5</text>
+<group>
+<path stroke="purple">
+768 352 m
+880 304
+960 368
+1008 400
+1040 384 c
+</path>
+<group>
+<use name="mark/disk(sx)" pos="768 352" size="normal" stroke="purple"/>
+<text matrix="1 0 0 1 54 -183" transformations="translations" pos="720 544" stroke="purple" type="label" width="25.5892" height="12.0232" depth="4.172" valign="baseline" style="math">s_3
+</text>
+</group>
+<group>
+<use name="mark/disk(sx)" pos="1040 384" size="normal" stroke="purple"/>
+<text matrix="1 0 0 1 326 -151" transformations="translations" pos="720 544" stroke="purple" type="label" width="22.5876" height="17.1696" depth="4.172" valign="baseline" style="math">t_3</text>
+</group>
+</group>
+<group layer="beta" matrix="1 0 0 1 0 -32">
+<path matrix="1 0 0 0.933333 -16 -277.333" stroke="darkgray" dash="dashed">
+64 640 m
+64 400 l
+512 400 l
+512 640 l
+h
+</path>
+<text matrix="1 0 0 1 -7.94766 -315.17" transformations="translations" pos="64 608" stroke="black" type="label" width="314.502" height="20.9244" depth="6.972" valign="baseline">LONGEST $(s, t)$-DETOUR</text>
+<text matrix="0.999638 0.0269045 -0.0269045 0.999638 3.38334 -287.552" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="53.5892" depth="39.704" valign="top">$\textbf{Pytanie}:$ Czy w $G$ istnieje ścieżka z $s$ do $t$ długości \emph{przynajmniej} ${\sf dist}_G(s, t) + k$?</text>
+<text matrix="0.999638 0.0269045 -0.0269045 0.999638 3.38334 -211.712" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="36.8592" depth="22.96" valign="top">$\textbf{Wejście}$: \emph{Skierowany} graf $G$ oraz para wierzchołków $(s, t)$</text>
+</group>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="576 240" stroke="black" type="minipage" width="544" height="36.0948" depth="22.176" valign="top">Tak, jeżeli w $G$ da się rozwiązać 3-DISJOINT PATHS w czasie wielomianowym.</text>
+<text layer="delta" matrix="1 0 0 1 0 -112" transformations="translations" pos="576 240" stroke="black" type="minipage" width="544" height="36.0948" depth="22.176" valign="top">Tak, jeżeli w $G$ da się rozwiązać 2-DISJOINT PATHS w czasie wielomianowym.</text>
+</page>
+<page title="Pomysł">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<path layer="alpha" matrix="1 0 0 1 192 -116.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 320 -116.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 448 -116.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 704 -116.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 832 -116.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 176.061 -132.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
+<use matrix="1 0 0 1 192 -116.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 184.028 -116.01" transformations="translations" pos="608 448" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
+<text matrix="1 0 0 1 217.578 -276.01" transformations="translations" pos="432 528" stroke="black" type="label" width="44.8448" height="19.3844" depth="3.78" valign="baseline" style="math">\geq k</text>
+<text matrix="1 0 0 1 -79.939 -132.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_1</text>
+<text matrix="1 0 0 1 560.061 -132.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.3376" height="19.0736" depth="4.172" valign="baseline" style="math">L_r</text>
+<group matrix="1 0 0 1 0 -192">
+<use matrix="1 0 0 1 192 -116.01" name="mark/disk(sx)" pos="96 560" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 192 -116.01" name="mark/disk(sx)" pos="352 560" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 185.462 -116.01" transformations="translations" pos="96 528" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
+<text matrix="1 0 0 1 184.016 -116.01" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
+<path matrix="1 0 0 1 192 -116.01" stroke="black" arrow="normal/normal">
+96 560 m
+352 560 l
+</path>
+</group>
+<use matrix="1 0 0 1 192 75.99" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 192 75.99" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 184.738 59.99" transformations="translations" pos="352 352" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
+<text matrix="1 0 0 1 186.963 75.99" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
+<path stroke="black" arrow="normal/normal">
+544 443.99 m
+720 528
+928 443.99 c
+</path>
+<path stroke="black" arrow="normal/normal">
+544 251.99 m
+592 304
+752 256
+800 363.99 c
+</path>
+<path stroke="black" arrow="normal/normal">
+800 363.99 m
+688 352
+656 432
+544 443.99 c
+</path>
+</page>
+<page title="Trochę szczegółów">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<path layer="alpha" matrix="1 0 0 1 64 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 192 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 320 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 48.061 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
+<path matrix="1 0 0 1 0 -80" stroke="black" arrow="normal/normal">
+160 251.99 m
+416 251.99 l
+</path>
+<text matrix="1 0 0 1 -207.939 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_1</text>
+<path matrix="1 0 0 1 832 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 960 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 688.061 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.3376" height="19.0736" depth="4.172" valign="baseline" style="math">L_r</text>
+<path matrix="1 0 0 1 704 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 205.028 -183.324" transformations="translations" pos="608 448" stroke="black" type="label" width="14.6776" height="12.0316" depth="5.404" valign="baseline" style="math">y</text>
+<path matrix="1 0 0 1 512 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<group matrix="1 0 0 1 0 -272">
+<use matrix="1 0 0 1 64 -116.01" name="mark/disk(sx)" pos="96 560" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 57.462 -116.01" transformations="translations" pos="96 528" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
+</group>
+<text matrix="1 0 0 1 38.7382 21.9854" transformations="translations" pos="352 352" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
+<text matrix="1 0 0 1 49.3252 133" transformations="translations" pos="608 256" stroke="darkmagenta" type="label" width="29.3496" height="19.3704" depth="0" valign="baseline" style="math">2k</text>
+<path matrix="1 0 0 1 0 112" stroke="darkmagenta" dash="dashed" arrow="normal/normal">
+416 251.99 m
+928 251.99 l
+</path>
+<use matrix="1 0 0 1 320 -4.01" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 314.963 -4.01" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
+<use matrix="1 0 0 1 320 -116.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 312.028 -116.01" transformations="translations" pos="608 448" stroke="black" type="label" width="14.1988" height="12.0092" depth="0" valign="baseline" style="math">z</text>
+<path matrix="1 0 0 1 128 112" stroke="black" dash="dashed" arrow="normal/normal">
+800 251.99 m
+841.461 273.662
+880.178 217.91
+928 251.99 c
+</path>
+<group matrix="1.33334 0 0 1 -202.667 254">
+<path matrix="1 0 0 1 0 -144" stroke="darkmagenta">
+464 272 m
+848 272 l
+</path>
+<path matrix="1 0 0 0.5 0 64" stroke="darkmagenta">
+464 144 m
+464 112 l
+</path>
+<path matrix="1 0 0 0.5 384 64" stroke="darkmagenta">
+464 144 m
+464 112 l
+</path>
+</group>
+<path matrix="1 0 0 1 0 -80" stroke="darkcyan" dash="dashed" arrow="normal/normal">
+800 347.99 m
+416 443.99 l
+</path>
+<group matrix="1.00029 -0.251172 0.214348 0.861158 -80.6861 350.755">
+<path matrix="1 0 0 1 0 -144" stroke="darkcyan">
+464 272 m
+848 272 l
+</path>
+<path matrix="1 0 0 0.5 0 64" stroke="darkcyan">
+464 144 m
+464 112 l
+</path>
+<path matrix="1 0 0 0.5 384 64" stroke="darkcyan">
+464 144 m
+464 112 l
+</path>
+</group>
+<text matrix="1 0 0 1 0 -96" transformations="translations" pos="528 368" stroke="darkcyan" type="label" width="15.4" height="19.3704" depth="0" valign="baseline" style="math">k</text>
+<path matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
+608 251.99 m
+624 304
+752 272
+832 288
+800 347.99 c
+</path>
+<text matrix="1 0 0 1 56.0158 -388.01" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
+<text matrix="1 0 0 1 40.3 -234.695" transformations="translations" pos="464 432" stroke="brown" type="label" width="15.4" height="19.3704" depth="0" valign="baseline" style="math">k</text>
+<path matrix="1 0 0 1 0 -272" stroke="brown" dash="dashed" arrow="normal/normal">
+416 443.99 m
+608 443.99 l
+</path>
+<group matrix="0.499999 0 0 1 184.003 64">
+<path matrix="1 0 0 1 0 -144" stroke="brown">
+464 272 m
+848 272 l
+</path>
+<path matrix="1 0 0 0.5 0 64" stroke="brown">
+464 144 m
+464 112 l
+</path>
+<path matrix="1 0 0 0.5 384 64" stroke="brown">
+464 144 m
+464 112 l
+</path>
+</group>
+<use matrix="1 0 0 1 0 -308.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 -7.9716 -308.01" transformations="translations" pos="608 448" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
+<use matrix="1 0 0 1 64 -4.01" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 192 -212.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -388.01" name="mark/disk(sx)" pos="352 560" size="normal" stroke="black"/>
+<path layer="beta" stroke="darkgray" dash="dashed">
+16 640 m
+16 432 l
+176 432 l
+176 640 l
+h
+</path>
+<text matrix="1 0 0 1 5.247 -22.0046" transformations="translations" pos="16 640" stroke="black" type="label" width="72.436" height="12.0092" depth="0" valign="baseline" style="math">s \rightarrow u</text>
+<text matrix="1 0 0 1 5.247 -22.4724" transformations="translations" pos="16 608" stroke="black" type="label" width="138.748" height="20.9244" depth="6.972" valign="baseline">$u \rightarrow x$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -21.0193" transformations="translations" pos="16 576" stroke="black" type="label" width="74.0124" height="12.0316" depth="5.404" valign="baseline" style="math">x \rightarrow y</text>
+<text matrix="1 0 0 1 5.247 -26.8911" transformations="translations" pos="16 544" stroke="black" type="label" width="136.035" height="20.9244" depth="6.972" valign="baseline">$y \rightarrow v$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="black" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
+<text matrix="1 0 0 1 5.247 -6.0046" transformations="translations" pos="16 448" stroke="black" type="label" width="67.6648" height="17.1584" depth="0" valign="baseline" style="math">z \rightarrow t</text>
+</page>
+<page title="Lemat 3">
+<layer name="alpha"/>
+<layer name="gamma"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="beta"/>
+<layer name="delta"/>
+<layer name="theta"/>
+<layer name="epsilon"/>
+<layer name="iota"/>
+<layer name="kappa"/>
+<layer name="lambda"/>
+<view layers="alpha gamma zeta eta beta" active="alpha"/>
+<view layers="alpha gamma zeta beta delta" active="delta"/>
+<view layers="alpha beta delta" active="delta"/>
+<view layers="alpha beta delta theta" active="theta"/>
+<view layers="alpha beta delta theta epsilon" active="epsilon"/>
+<view layers="alpha beta delta theta epsilon iota" active="iota"/>
+<view layers="alpha beta delta theta epsilon iota kappa" active="kappa"/>
+<view layers="alpha beta delta theta epsilon iota kappa lambda" active="lambda"/>
+<path layer="alpha" matrix="1 0 0 1 960 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 832 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path layer="eta" matrix="1 0 0 1 128 112" stroke="red" pen="ultrafat" arrow="normal/normal">
+800 251.99 m
+841.461 273.662
+880.178 217.91
+928 251.99 c
+</path>
+<path layer="beta" matrix="1 0 0 1 64 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 192 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path layer="alpha" matrix="1 0 0 1 320 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 48.061 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
+<path layer="zeta" matrix="1 0 0 1 0 -80" stroke="black" arrow="normal/normal">
+160 251.99 m
+416 251.99 l
+</path>
+<text layer="beta" matrix="1 0 0 1 -207.939 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_1</text>
+<text layer="theta" matrix="1 0 0 1 669.44 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="69.1208" height="19.0624" depth="7.98" valign="baseline" style="math">L_{p + j_3}</text>
+<path layer="zeta" matrix="1 0 0 1 704 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 205.028 -183.324" transformations="translations" pos="608 448" stroke="black" type="label" width="14.6776" height="12.0316" depth="5.404" valign="baseline" style="math">y</text>
+<path matrix="1 0 0 1 512 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<group layer="beta" matrix="1 0 0 1 0 -272">
+<use matrix="1 0 0 1 64 -116.01" name="mark/disk(sx)" pos="96 560" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 57.462 -116.01" transformations="translations" pos="96 528" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
+</group>
+<text layer="alpha" matrix="1 0 0 1 56.7382 29.9854" transformations="translations" pos="352 352" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
+<path matrix="1 0 0 1 0 112" stroke="black" dash="dashed" arrow="normal/normal">
+416 251.99 m
+928 251.99 l
+</path>
+<text matrix="1 0 0 1 314.963 -4.01" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
+<text matrix="1 0 0 1 312.028 -116.01" transformations="translations" pos="608 448" stroke="black" type="label" width="14.1988" height="12.0092" depth="0" valign="baseline" style="math">z</text>
+<path layer="gamma" matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
+800 347.99 m
+416 443.99 l
+</path>
+<path matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
+608 251.99 m
+624 304
+752 272
+832 288
+800 347.99 c
+</path>
+<text layer="alpha" matrix="1 0 0 1 56.0158 -388.01" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
+<text layer="zeta" matrix="1 0 0 1 -7.9716 -308.01" transformations="translations" pos="608 448" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
+<use matrix="1 0 0 1 192 -212.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<path layer="alpha" stroke="darkgray" dash="dashed">
+16 640 m
+16 432 l
+176 432 l
+176 640 l
+h
+</path>
+<text matrix="1 0 0 1 5.247 -22.0046" transformations="translations" pos="16 640" stroke="black" type="label" width="72.436" height="12.0092" depth="0" valign="baseline" style="math">s \rightarrow u</text>
+<text matrix="1 0 0 1 5.247 -22.4724" transformations="translations" pos="16 608" stroke="red" type="label" width="138.748" height="20.9244" depth="6.972" valign="baseline">$u \rightarrow x$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -21.0193" transformations="translations" pos="16 576" stroke="black" type="label" width="74.0124" height="12.0316" depth="5.404" valign="baseline" style="math">x \rightarrow y</text>
+<text matrix="1 0 0 1 5.247 -26.8911" transformations="translations" pos="16 544" stroke="black" type="label" width="136.035" height="20.9244" depth="6.972" valign="baseline">$y \rightarrow v$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="black" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
+<text matrix="1 0 0 1 5.247 -6.0046" transformations="translations" pos="16 448" stroke="red" type="label" width="67.6648" height="17.1584" depth="0" valign="baseline" style="math">z \rightarrow t</text>
+<path layer="zeta" matrix="1 0 0 1 0 -272" stroke="red" pen="ultrafat" arrow="normal/normal">
+416 443.99 m
+608 443.99 l
+</path>
+<path layer="beta" matrix="1 0 0 1 -16 0" stroke="black" dash="dashed" arrow="normal/normal">
+176 171.99 m
+432 363.99 l
+</path>
+<path layer="delta" stroke="seagreen" arrow="normal/normal">
+928 363.99 m
+560 304
+543.857 171.99 c
+</path>
+<use layer="zeta" matrix="1 0 0 1 0 -308.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<use layer="alpha" matrix="1 0 0 1 64 -388.01" name="mark/disk(sx)" pos="352 560" size="normal" stroke="black"/>
+<text layer="delta" matrix="1 0 0 1 37.4953 -4.01" transformations="translations" pos="496 144" stroke="black" type="label" width="20.7228" height="12.0092" depth="0" valign="baseline" style="math">w</text>
+<path layer="theta" matrix="1 0 0 1 448 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 576 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path matrix="1 0 0 1 704 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<text matrix="1 0 0 1 157.44 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="69.1208" height="19.0624" depth="7.98" valign="baseline" style="math">L_{p + j_1}</text>
+<text matrix="1 0 0 1 541.44 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="69.1208" height="19.0624" depth="7.98" valign="baseline" style="math">L_{p + j_2}</text>
+<text matrix="1 0 0 1 -0.2722 -5.4828" transformations="translations" pos="464 272" stroke="black" type="label" width="32.5444" height="2.9456" depth="0" valign="baseline" style="math">\ldots</text>
+<text matrix="1 0 0 1 511.728 -5.4828" transformations="translations" pos="464 272" stroke="black" type="label" width="32.5444" height="2.9456" depth="0" valign="baseline" style="math">\ldots</text>
+<path layer="delta" stroke="seagreen" arrow="normal/normal">
+543.857 171.99 m
+592 112
+608 112
+944 112
+1136 336
+1120 368
+1056 363.99 c
+</path>
+<path layer="iota" matrix="1 0 0 1 0 112" stroke="blue" dash="dashed" arrow="normal/normal">
+416 251.99 m
+928 251.99 l
+</path>
+<use layer="alpha" matrix="1 0 0 1 64 -4.01" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
+<text layer="iota" matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="blue" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
+<use layer="alpha" matrix="1 0 0 1 320 -4.01" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
+<text layer="lambda" matrix="1 0 0 1 0 -32" transformations="translations" pos="256 496" stroke="black" type="label" width="518.602" height="20.9244" depth="6.972" valign="baseline" style="math">2k - j_2 + (j_2 - j_1) = 2k - j_1 \geq 2k - k = k</text>
+<group layer="epsilon">
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="256 624" stroke="black" type="label" width="85.1956" height="18.4184" depth="5.404" valign="baseline" style="math">j_2 \leq j_3</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="384 608" stroke="black" type="label" width="85.1956" height="18.4184" depth="5.404" valign="baseline" style="math">j_1 &lt; j_2</text>
+</group>
+<text layer="iota" matrix="1 0 0 1 0 0.7658" transformations="translations" pos="256 528" stroke="blue" type="label" width="87.444" height="19.3928" depth="5.404" valign="baseline" style="math">2k - j_2</text>
+<text layer="kappa" matrix="1 0 0 1 0 -15.2342" transformations="translations" pos="400 544" stroke="purple" type="label" width="82.0988" height="18.4184" depth="5.404" valign="baseline" style="math">j_2 - j_1</text>
+<path stroke="purple" arrow="normal/normal">
+928 363.99 m
+560 304
+543.857 171.99 c
+</path>
+<use layer="alpha" matrix="1 0 0 1 320 -116.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<use layer="delta" matrix="1 0 0 1 32 0" name="mark/disk(sx)" pos="511.857 171.99" size="normal" stroke="black"/>
 </page>
 </ipe>

@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230504153355"/>
+<info created="D:20230503102830" modified="D:20230507013321"/>
 <preamble>\usepackage{polski}
-\usepackage{amssymb}</preamble>
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}</preamble>
 <ipestyle name="cpres">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -469,20 +471,20 @@ h
 <text matrix="1 0 0 1 326 -151" transformations="translations" pos="720 544" stroke="purple" type="label" width="22.5876" height="17.1696" depth="4.172" valign="baseline" style="math">t_3</text>
 </group>
 </group>
-<group layer="beta" matrix="1 0 0 1 0 -32">
-<path matrix="1 0 0 0.933333 -16 -277.333" stroke="darkgray" dash="dashed">
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="576 240" stroke="black" type="minipage" width="544" height="36.0948" depth="22.176" valign="top">Tak, jeżeli w $G$ da się rozwiązać 3-DISJOINT PATHS w czasie wielomianowym.</text>
+<text layer="delta" matrix="1 0 0 1 0 -112" transformations="translations" pos="576 240" stroke="black" type="minipage" width="544" height="36.0948" depth="22.176" valign="top">Tak, jeżeli w $G$ da się rozwiązać 2-DISJOINT PATHS w czasie wielomianowym.</text>
+<group layer="gamma">
+<path matrix="1 0 0 0.933333 -16 -309.333" stroke="darkgray" dash="dashed">
 64 640 m
 64 400 l
 512 400 l
 512 640 l
 h
 </path>
-<text matrix="1 0 0 1 -7.94766 -315.17" transformations="translations" pos="64 608" stroke="black" type="label" width="314.502" height="20.9244" depth="6.972" valign="baseline">LONGEST $(s, t)$-DETOUR</text>
-<text matrix="0.999638 0.0269045 -0.0269045 0.999638 3.38334 -287.552" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="53.5892" depth="39.704" valign="top">$\textbf{Pytanie}:$ Czy w $G$ istnieje ścieżka z $s$ do $t$ długości \emph{przynajmniej} ${\sf dist}_G(s, t) + k$?</text>
-<text matrix="0.999638 0.0269045 -0.0269045 0.999638 3.38334 -211.712" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="36.8592" depth="22.96" valign="top">$\textbf{Wejście}$: \emph{Skierowany} graf $G$ oraz para wierzchołków $(s, t)$</text>
+<text matrix="1 0 0 1 -7.94766 -347.17" transformations="translations" pos="64 608" stroke="black" type="label" width="314.502" height="20.9244" depth="6.972" valign="baseline">LONGEST $(s, t)$-DETOUR</text>
+<text matrix="0.999638 0.0269045 -0.0269045 0.999638 3.38334 -319.552" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="53.5892" depth="39.704" valign="top">$\textbf{Pytanie}:$ Czy w $G$ istnieje ścieżka z $s$ do $t$ długości \emph{przynajmniej} ${\sf dist}_G(s, t) + k$?</text>
+<text matrix="0.999638 0.0269045 -0.0269045 0.999638 3.38334 -243.712" transformations="translations" pos="64 480" stroke="black" type="minipage" width="432" height="36.8592" depth="22.96" valign="top">$\textbf{Wejście}$: \emph{Skierowany} graf $G$ oraz para wierzchołków $(s, t)$</text>
 </group>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="576 240" stroke="black" type="minipage" width="544" height="36.0948" depth="22.176" valign="top">Tak, jeżeli w $G$ da się rozwiązać 3-DISJOINT PATHS w czasie wielomianowym.</text>
-<text layer="delta" matrix="1 0 0 1 0 -112" transformations="translations" pos="576 240" stroke="black" type="minipage" width="544" height="36.0948" depth="22.176" valign="top">Tak, jeżeli w $G$ da się rozwiązać 2-DISJOINT PATHS w czasie wielomianowym.</text>
 </page>
 <page title="Pomysł">
 <layer name="alpha"/>
@@ -931,7 +933,11 @@ h
 <layer name="lemma"/>
 <layer name="lengths"/>
 <layer name="new_Pux_with_int"/>
-<view layers="base old_Pux Pyz Pxy lemma new_Pux_with_int" active="new_Pux_with_int"/>
+<layer name="lengths_2"/>
+<layer name="tabelka"/>
+<view layers="base old_Pux tabelka" active="lengths"/>
+<view layers="base old_Pux new_Pux Pyz Pxy lemma tabelka" active="lengths_2"/>
+<view layers="base old_Pux Pyz Pxy lemma new_Pux_with_int lengths_2 tabelka" active="tabelka"/>
 <path layer="base" matrix="1 0 0 1 64 -196.01" stroke="black">
 64 608 m
 64 320 l
@@ -1038,7 +1044,7 @@ h
 464 112 l
 </path>
 </group>
-<text matrix="1 0 0 1 0 -96" transformations="translations" pos="528 368" stroke="darkcyan" type="label" width="15.4" height="19.3704" depth="0" valign="baseline" style="math">k</text>
+<text matrix="1 0 0 1 16 -96" transformations="translations" pos="528 368" stroke="darkcyan" type="label" width="15.4" height="19.3704" depth="0" valign="baseline" style="math">k</text>
 <path layer="base" matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
 608 251.99 m
 624 304
@@ -1048,7 +1054,7 @@ h
 </path>
 <text matrix="1 0 0 1 56.0158 -388.01" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
 <text layer="lengths" matrix="1 0 0 1 40.3 -234.695" transformations="translations" pos="464 432" stroke="brown" type="label" width="15.4" height="19.3704" depth="0" valign="baseline" style="math">k</text>
-<path layer="old_Pux" matrix="1 0 0 1 0 -272" stroke="brown" dash="dashed" arrow="normal/normal">
+<path layer="old_Pux" matrix="1 0 0 1 0 -272" stroke="darkred" dash="dashed" arrow="normal/normal">
 416 443.99 m
 608 443.99 l
 </path>
@@ -1069,11 +1075,6 @@ h
 <text layer="base" matrix="1 0 0 1 -7.9716 -308.01" transformations="translations" pos="608 448" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
 <text matrix="1 0 0 1 648.631 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="110.737" height="19.068" depth="9.912" valign="baseline" style="math">L_{{\sf dist}_G(s, t)}</text>
 <use matrix="1 0 0 1 320 -4.01" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 0 -576" stroke="black" dash="dashed">
-32 608 m
-224 608 l
-</path>
-<text matrix="1 0 0 1 0 -582.469" transformations="translations" pos="256 624" stroke="black" type="minipage" width="96" height="16.5144" depth="2.548" valign="top">$P$</text>
 <path layer="new_Pux" stroke="purple" pen="ultrafat" arrow="arc/normal">
 416 171.99 m
 480 432
@@ -1100,8 +1101,7 @@ h
 800 347.99 c
 </path>
 <use layer="base" matrix="1 0 0 1 192 -212.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
-<text layer="new_Pux" transformations="translations" pos="496 176" stroke="purple" type="label" width="13.6388" height="19.3704" depth="0" valign="baseline">k</text>
-<text layer="Pyz" matrix="1 0 0 1 112 32" transformations="translations" pos="560 352" stroke="orange" type="label" width="27.5856" height="19.3704" depth="0" valign="baseline">3k</text>
+<text layer="new_Pux" matrix="1 0 0 1 -16 48" transformations="translations" pos="496 176" stroke="purple" type="label" width="13.6388" height="19.3704" depth="0" valign="baseline">k</text>
 <text layer="lemma" matrix="1 0 0 1 -144 38.58" transformations="translations" pos="512 576" stroke="brown" type="minipage" width="64" height="22.8172" depth="8.848" valign="top">$P&apos;_{u,x}$</text>
 <text matrix="1 0 0 1 -80 30.4964" transformations="translations" pos="512 576" stroke="black" type="minipage" width="32" height="14.742" depth="0.756" valign="top">$\cap$</text>
 <text matrix="1 0 0 1 -48 36.2686" transformations="translations" pos="512 576" stroke="orange" type="minipage" width="64" height="20.4904" depth="6.552" valign="top">$P_{y,z}$</text>
@@ -1109,7 +1109,7 @@ h
 <text matrix="1 0 0 1 128 38.58" transformations="translations" pos="512 576" stroke="brown" type="minipage" width="64" height="22.8172" depth="8.848" valign="top">$P&apos;_{u,x}$</text>
 <text matrix="1 0 0 1 192 30.4964" transformations="translations" pos="512 576" stroke="black" type="minipage" width="32" height="14.742" depth="0.756" valign="top">$\cap$</text>
 <text matrix="1 0 0 1 224 36.2686" transformations="translations" pos="512 576" stroke="red" type="minipage" width="64" height="20.4904" depth="6.552" valign="top">$P_{x,y}$</text>
-<text matrix="1 0 0 1 288 36.6956" transformations="translations" pos="512 576" stroke="black" type="minipage" width="80" height="20.9244" depth="6.972" valign="top">$= \{x\}$</text>
+<text matrix="1 0 0 1 288 36.6956" transformations="translations" pos="512 576" stroke="black" type="minipage" width="80" height="20.9244" depth="6.972" valign="top">$\subseteq \{x\}$</text>
 <path layer="new_Pux_with_int" stroke="brown" pen="ultrafat" arrow="arc/normal">
 416 171.99 m
 608 288
@@ -1120,150 +1120,488 @@ h
 592 224
 608 171.99 c
 </path>
-<use name="mark/disk(sx)" pos="680.4 209.315" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 62.0385 -276.01" transformations="translations" pos="608 448" stroke="black" type="label" width="20.7228" height="12.0092" depth="0" valign="baseline" style="math">w</text>
 <use layer="base" matrix="1 0 0 1 0 -308.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<text layer="new_Pux_with_int" matrix="1 0 0 1 -80 -128" transformations="translations" pos="560 352" stroke="darkred" type="label" width="13.6388" height="19.3704" depth="0" valign="baseline">k</text>
+<use name="mark/disk(sx)" pos="790.273 206.671" size="normal" stroke="black"/>
+<text matrix="1 0 0 1 205.028 -247.333" transformations="translations" pos="608 448" stroke="black" type="label" width="20.7228" height="12.0092" depth="0" valign="baseline" style="math">w</text>
+<text layer="new_Pux" matrix="1 0 0 1 -16 48" transformations="translations" pos="496 176" stroke="purple" type="label" width="13.6388" height="19.3704" depth="0" valign="baseline">k</text>
+<group layer="tabelka">
+<path stroke="darkgray" dash="dashed">
+16 640 m
+16 432 l
+176 432 l
+176 640 l
+h
+</path>
+<text matrix="1 0 0 1 5.247 -22.0046" transformations="translations" pos="16 640" stroke="black" type="label" width="72.436" height="12.0092" depth="0" valign="baseline" style="math">s \rightarrow u</text>
+<text matrix="1 0 0 1 5.247 -22.4724" transformations="translations" pos="16 608" stroke="black" type="label" width="138.748" height="20.9244" depth="6.972" valign="baseline">$u \rightarrow x$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -21.0193" transformations="translations" pos="16 576" stroke="black" type="label" width="74.0124" height="12.0316" depth="5.404" valign="baseline" style="math">x \rightarrow y</text>
+<text matrix="1 0 0 1 5.247 -26.8911" transformations="translations" pos="16 544" stroke="black" type="label" width="136.035" height="20.9244" depth="6.972" valign="baseline">$y \rightarrow v$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="black" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
+<text matrix="1 0 0 1 5.247 -6.0046" transformations="translations" pos="16 448" stroke="black" type="label" width="67.6648" height="17.1584" depth="0" valign="baseline" style="math">z \rightarrow t</text>
+</group>
 </page>
-<page>
+<page title="Pomysł na algorytm">
 <layer name="alpha"/>
+<layer name="grey"/>
+<layer name="step_1"/>
+<layer name="step_2"/>
+<layer name="step_3"/>
+<layer name="step_4"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 64 -180.01" stroke="black">
+<view layers="alpha step_1" active="step_1"/>
+<view layers="alpha step_1 step_2" active="alpha"/>
+<view layers="alpha step_1 step_2 step_3" active="alpha"/>
+<view layers="alpha step_1 step_2 step_3 step_4" active="alpha"/>
+<path layer="alpha" matrix="1 0 0 1 64 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<path matrix="1 0 0 1 192 -180.01" stroke="black">
+<path matrix="1 0 0 1 192 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<path matrix="1 0 0 1 320 -180.01" stroke="black">
+<path matrix="1 0 0 1 320 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<text matrix="1 0 0 1 48.061 -196.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
-<path matrix="1 0 0 1 0 -64" stroke="black" dash="dashed" pen="heavier" arrow="normal/normal">
+<text matrix="1 0 0 1 48.061 -208" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
+<path matrix="1 0 0 1 0 -75.99" stroke="black" dash="dashed" arrow="normal/normal">
 160 251.99 m
 416 251.99 l
 </path>
-<text matrix="1 0 0 1 -207.939 -196.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_0</text>
-<path matrix="1 0 0 1 832 -180.01" stroke="black">
+<text matrix="1 0 0 1 -207.939 -208" transformations="translations" pos="352 288" stroke="black" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_0</text>
+<path matrix="1 0 0 1 832 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<path matrix="1 0 0 1 960 -180.01" stroke="black">
+<path matrix="1 0 0 1 960 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<path matrix="1 0 0 1 704 -180.01" stroke="black">
+<path matrix="1 0 0 1 704 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<text matrix="1 0 0 1 205.028 -167.324" transformations="translations" pos="608 448" stroke="black" type="label" width="14.6776" height="12.0316" depth="5.404" valign="baseline" style="math">y</text>
-<path matrix="1 0 0 1 512 -180.01" stroke="black">
+<text matrix="1 0 0 1 205.028 -179.314" transformations="translations" pos="608 448" stroke="black" type="label" width="14.6776" height="12.0316" depth="5.404" valign="baseline" style="math">y</text>
+<path matrix="1 0 0 1 512 -192" stroke="black">
 64 608 m
 64 320 l
 128 320 l
 128 608 l
 h
 </path>
-<group matrix="1 0 0 1 0 -256">
+<group matrix="1 0 0 1 0 -267.99">
 <use matrix="1 0 0 1 64 -116.01" name="mark/disk(sx)" pos="96 560" size="normal" stroke="black"/>
 <text matrix="1 0 0 1 57.462 -116.01" transformations="translations" pos="96 528" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
 </group>
-<text matrix="1 0 0 1 38.7382 37.9854" transformations="translations" pos="352 352" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
-<path matrix="1 0 0 1 0 128" stroke="darkmagenta" dash="dashed" arrow="normal/normal">
+<text matrix="1 0 0 1 38.7382 25.9954" transformations="translations" pos="352 352" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
+<path matrix="1 0 0 1 0 116.01" stroke="darkorange" dash="dashed" arrow="normal/normal">
 416 251.99 m
 928 251.99 l
 </path>
-<text matrix="1 0 0 1 314.963 11.99" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
-<text matrix="1 0 0 1 312.028 -100.01" transformations="translations" pos="608 448" stroke="black" type="label" width="14.1988" height="12.0092" depth="0" valign="baseline" style="math">z</text>
-<path matrix="1 0 0 1 128 128" stroke="black" dash="dashed" pen="heavier" arrow="normal/normal">
+<text matrix="1 0 0 1 314.963 -0" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
+<text matrix="1 0 0 1 312.028 -112" transformations="translations" pos="608 448" stroke="black" type="label" width="14.1988" height="12.0092" depth="0" valign="baseline" style="math">z</text>
+<path matrix="1 0 0 1 128 116.01" stroke="black" dash="dashed" arrow="normal/normal">
 800 251.99 m
 841.461 273.662
 880.178 217.91
 928 251.99 c
 </path>
-<path matrix="1 0 0 1 0 -64" stroke="darkcyan" dash="dashed" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -75.99" stroke="darkorange" dash="dashed" arrow="normal/normal">
 800 347.99 m
 416 443.99 l
 </path>
-<path matrix="1 0 0 1 0 -64" stroke="black" dash="dashed" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -75.99" stroke="black" dash="dashed" arrow="normal/normal">
 608 251.99 m
 624 304
 752 272
 832 288
 800 347.99 c
 </path>
-<text matrix="1 0 0 1 56.0158 -372.01" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
-<path matrix="1 0 0 1 0 -256" stroke="brown" dash="dashed" pen="heavier" arrow="normal/normal">
+<text matrix="1 0 0 1 56.0158 -384" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
+<path matrix="1 0 0 1 0 -267.99" stroke="darkred" dash="dashed" arrow="normal/normal">
 416 443.99 m
 608 443.99 l
 </path>
-<text matrix="1 0 0 1 -7.9716 -292.01" transformations="translations" pos="608 448" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
-<text matrix="1 0 0 1 648.631 -196.01" transformations="translations" pos="352 288" stroke="black" type="label" width="110.737" height="19.068" depth="9.912" valign="baseline" style="math">L_{{\sf dist}_G(s, t)}</text>
-<use matrix="1 0 0 1 320 11.99" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 64 -372.01" name="mark/disk(sx)" pos="352 560" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 0 128" stroke="darkorange" dash="dashed" pen="heavier" arrow="linear/normal">
-416 251.99 m
-928 251.99 l
+<text matrix="1 0 0 1 -7.9716 -304" transformations="translations" pos="608 448" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
+<text matrix="1 0 0 1 648.631 -208" transformations="translations" pos="352 288" stroke="black" type="label" width="110.737" height="19.068" depth="9.912" valign="baseline" style="math">L_{{\sf dist}_G(s, t)}</text>
+<use matrix="1 0 0 1 320 -112" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 192 -208" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<text layer="step_1" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="20.9244" depth="6.972" valign="top">1) Zgadnij ${\color{red} u, x, v}$.</text>
+<text layer="step_2" matrix="1 0 0 1 0 -48" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">2) Znajdź najkrótszą $P&apos;_{s, u}$.</text>
+<path layer="grey" matrix="1 0 0 1 64 -192" stroke="lightgray">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
 </path>
-<path matrix="1 0 0 1 0 -64" stroke="darkorange" dash="dashed" pen="heavier" arrow="linear/normal">
-800 347.99 m
-416 443.99 l
+<path matrix="1 0 0 1 192 -192" stroke="lightgray">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
 </path>
-<use matrix="1 0 0 1 64 11.99" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 320 -100.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
-<path matrix="1 0 0 1 0 -64" stroke="red" dash="dashed" pen="heavier" arrow="linear/normal">
-608 251.99 m
-624 304
-752 272
-832 288
-800 347.99 c
+<path matrix="1 0 0 1 0 -75.99" stroke="lightgray" dash="dashed" arrow="normal/normal">
+160 251.99 m
+416 251.99 l
 </path>
-<use matrix="1 0 0 1 192 -196.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 0 -292.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
-<path stroke="brown" pen="fat" arrow="normal/normal">
-160 187.99 m
-288 256
-416 187.99 c
+<text matrix="1 0 0 1 -207.939 -208" transformations="translations" pos="352 288" stroke="lightgray" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_0</text>
+<group matrix="1 0 0 1 0 -267.99">
+<use matrix="1 0 0 1 64 -116.01" name="mark/disk(sx)" pos="96 560" size="normal" stroke="lightgray"/>
+<text matrix="1 0 0 1 57.462 -116.01" transformations="translations" pos="96 528" stroke="lightgray" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
+</group>
+<text layer="step_3" matrix="1 0 0 1 0 -96" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">3) Znajdź ${\color{darkred} P&apos;_{u, x}}$ długości $k$ takie, że ${\color{darkred} P&apos;_{u, x}} \cap {\color{darkorange}P_{y, z}} = \emptyset$.</text>
+<text layer="step_4" matrix="1 0 0 1 0 -144" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">4) Znajdź rozłączne ${\color{darkcyan} P&apos;_{x, v}}$ i ${\color{darkmagenta}P&apos;_{v, t}}$.</text>
+<text layer="step_3" matrix="1 0 0 1 48 -38.1474" transformations="translations" pos="912 576" stroke="red" type="minipage" width="256" height="16.6824" depth="2.688" valign="top">$\leftarrow $???</text>
+<text layer="step_4" matrix="1 0 0 1 -192 -83.4342" transformations="translations" pos="912 576" stroke="red" type="minipage" width="256" height="19.3928" depth="5.404" valign="top">$\leftarrow 2$-disjoint paths </text>
+<path layer="step_2" stroke="black" pen="ultrafat" arrow="normal/normal">
+160 176 m
+288 240
+416 176 c
 </path>
-<path stroke="brown" pen="fat" arrow="normal/normal">
-416 187.99 m
-528 256
-608 187.99 c
+<path layer="step_3" stroke="darkred" pen="ultrafat" arrow="normal/normal">
+416 176 m
+464 240
+480 80
+528 208
+608 176 c
 </path>
-<path stroke="brown" pen="fat" arrow="normal/normal">
-608 187.99 m
-608 256
-784 256
-416 379.99 c
+<path layer="step_4" stroke="darkcyan" pen="ultrafat" arrow="normal/normal">
+608 176 m
+704 256
+416 368 c
 </path>
-<path stroke="brown" dash="dashed" arrow="normal/normal">
-416 379.99 m
-816 512
-1056 379.99 c
+<path stroke="darkmagenta" pen="ultrafat" arrow="normal/normal">
+416 368 m
+784 432
+1056 368 c
 </path>
-<path stroke="brown" pen="fat" arrow="normal/normal">
-416 379.99 m
-816 512
-1056 379.99 c
+<use layer="alpha" matrix="1 0 0 1 64 -0" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 320 -0" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="608 176" size="normal" stroke="black"/>
+<text layer="step_1" matrix="1 0 0 1 38.7382 25.9954" transformations="translations" pos="352 352" stroke="red" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
+<text matrix="1 0 0 1 56.0158 -384" transformations="translations" pos="352 528" stroke="red" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
+<use matrix="1 0 0 1 64 0" name="mark/disk(sx)" pos="352 368" size="normal" stroke="red"/>
+<use name="mark/disk(sx)" pos="416 176" size="normal" stroke="red"/>
+<text matrix="1 0 0 1 -7.9716 -304" transformations="translations" pos="608 448" stroke="red" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
+<use name="mark/disk(sx)" pos="608 176" size="normal" stroke="red"/>
+<group layer="alpha">
+<path stroke="darkgray" dash="dashed">
+16 640 m
+16 432 l
+176 432 l
+176 640 l
+h
+</path>
+<text matrix="1 0 0 1 5.247 -22.0046" transformations="translations" pos="16 640" stroke="black" type="label" width="72.436" height="12.0092" depth="0" valign="baseline" style="math">s \rightarrow u</text>
+<text matrix="1 0 0 1 5.247 -22.4724" transformations="translations" pos="16 608" stroke="black" type="label" width="138.748" height="20.9244" depth="6.972" valign="baseline">$u \rightarrow x$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -21.0193" transformations="translations" pos="16 576" stroke="black" type="label" width="74.0124" height="12.0316" depth="5.404" valign="baseline" style="math">x \rightarrow y</text>
+<text matrix="1 0 0 1 5.247 -26.8911" transformations="translations" pos="16 544" stroke="black" type="label" width="136.035" height="20.9244" depth="6.972" valign="baseline">$y \rightarrow v$ : $(k)$</text>
+<text matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="black" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
+<text matrix="1 0 0 1 5.247 -6.0046" transformations="translations" pos="16 448" stroke="black" type="label" width="67.6648" height="17.1584" depth="0" valign="baseline" style="math">z \rightarrow t</text>
+</group>
+</page>
+<page title="Koślawe uniwersalne rodziny">
+<layer name="alpha"/>
+<layer name="AB1"/>
+<layer name="AB2"/>
+<layer name="F1"/>
+<layer name="U"/>
+<layer name="AB3"/>
+<layer name="F3"/>
+<layer name="paths"/>
+<layer name="paths2"/>
+<layer name="fpt"/>
+<layer name="cel"/>
+<layer name="weźmy"/>
+<layer name="F2"/>
+<view layers="alpha AB1 U" active="weźmy"/>
+<view layers="alpha AB1 F1 U" active="AB2"/>
+<view layers="alpha AB2 U" active="AB2"/>
+<view layers="alpha AB2 U F2" active="AB2"/>
+<view layers="alpha U paths cel" active="paths"/>
+<view layers="alpha U paths cel weźmy" active="weźmy"/>
+<view layers="alpha U AB3 paths2 cel weźmy" active="weźmy"/>
+<view layers="alpha U AB3 F3 paths2 cel weźmy" active="weźmy"/>
+<view layers="alpha U AB3 F3 paths2 fpt cel weźmy" active="weźmy"/>
+<path layer="U" matrix="1 0 0 1 -64 -16" stroke="black" fill="black" opacity="10%" stroke-opacity="opaque">
+160 608
+128 224
+352 160
+592 224
+544 560
+240 640 u
+</path>
+<text matrix="1 0 0 1 32 -64" transformations="translations" pos="16 592" stroke="black" type="label" width="22.0864" height="19.0624" depth="0" valign="baseline">$U$</text>
+<text layer="alpha" matrix="1 0 0 1 -64 32" transformations="translations" pos="640 576" stroke="black" type="minipage" width="512" height="20.594" depth="6.664" valign="top">$\mathbb{F} \subseteq 2^U$</text>
+<text matrix="1 0 0 1 -64 -16" transformations="translations" pos="640 576" stroke="black" type="minipage" width="512" height="37.6544" depth="23.716" valign="top">$\mathbb{F}$ jest $(n, p, q)-$\emph{koślawą uniwersalną rodziną} nad $U$ ($U$ rozmiaru $n$), jeżeli dla dowolnych</text>
+<text matrix="1 0 0 1 -64 48" transformations="translations" pos="640 432" stroke="black" type="minipage" width="192" height="26.5384" depth="12.6" valign="top">$A\subseteq \binom{U}{\leq p}$</text>
+<text matrix="1 0 0 1 128 48" transformations="translations" pos="640 432" stroke="black" type="minipage" width="192" height="26.5384" depth="12.6" valign="top">$B\subseteq \binom{U-A}{\leq q}$</text>
+<text matrix="1 0 0 1 -64 48" transformations="translations" pos="640 368" stroke="black" type="minipage" width="512" height="19.292" depth="5.348" valign="top">istnieje $F\in\mathbb{F}$, że:</text>
+<text matrix="1 0 0 1 -64 64" transformations="translations" pos="640 320" stroke="black" type="minipage" width="512" height="18.4016" depth="4.452" valign="top" style="item">$A\subseteq F$</text>
+<text matrix="1 0 0 1 -64 32" transformations="translations" pos="640 320" stroke="black" type="minipage" width="512" height="18.214" depth="4.256" valign="top" style="item">$B \cap F = \emptyset$</text>
+<path layer="AB1" matrix="1 0 0 1 -16 -16" stroke="black" fill="red" opacity="30%" stroke-opacity="opaque">
+416 432
+384 288
+192 288
+288 176
+512 256
+464 496 u
+</path>
+<path layer="F1" matrix="1 0 0 1 -16 -32" stroke="black" fill="blue" opacity="10%" stroke-opacity="opaque">
+416 496
+368 336
+208 272
+96 448
+240 688 u
+</path>
+<path layer="AB1" matrix="1 0 0 1 -32 -16" stroke="black" fill="lightgreen" opacity="50%" stroke-opacity="opaque">
+224 480
+176 336
+384 272
+400 544 u
+</path>
+<text matrix="1 0 0 1 5.5392 -33.5312" transformations="translations" pos="256 416" stroke="black" type="label" width="20.9216" height="19.0624" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 117.539 -145.531" transformations="translations" pos="256 416" stroke="black" type="label" width="22.5596" height="19.0624" depth="0" valign="baseline" style="math">B</text>
+<text layer="F1" matrix="1 0 0 1 -42.4608 94.4688" transformations="translations" pos="256 416" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline" style="math">F</text>
+<path layer="F2" stroke="black" fill="blue" opacity="10%" stroke-opacity="opaque">
+384 448
+464 320
+400 192
+224 192
+304 576 u
+</path>
+<path layer="AB2" matrix="1 0 0 1 -10.6667 -5.33333" stroke="black" fill="red" opacity="30%" stroke-opacity="opaque">
+160 544
+144 256
+288 192
+256 256
+256 480
+256 544 u
+</path>
+<path stroke="black" fill="lightgreen" opacity="50%" stroke-opacity="opaque">
+336 432
+416 352
+384 240
+288 224
+261.955 294.757 u
+</path>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="336 304" stroke="black" type="label" width="20.9216" height="19.0624" depth="0" valign="baseline">$A$</text>
+<text layer="F2" matrix="1 0 0 1 -16 128" transformations="translations" pos="336 304" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline" style="math">F</text>
+<text layer="AB2" matrix="1 0 0 1 -144 64" transformations="translations" pos="336 304" stroke="black" type="label" width="22.5596" height="19.0624" depth="0" valign="baseline" style="math">B</text>
+<text layer="cel" matrix="1 0 0 1 512 144" transformations="translations" pos="64 128" stroke="black" type="minipage" width="336" height="39.5192" depth="25.62" valign="top">Cel: $P&apos;_{u, x}$ długości $k$ takie, 
+
+że $P&apos;_{u, x} \cap P_{y, z} = \emptyset$</text>
+<text matrix="1 0 0 1 432 32" transformations="translations" pos="512 208" stroke="black" type="minipage" width="256" height="21.4256" depth="7.476" valign="top">$|V(P_{u, x})| \leq k+1$</text>
+<text matrix="1 0 0 1 432 64" transformations="translations" pos="512 208" stroke="black" type="minipage" width="256" height="21.4256" depth="7.476" valign="top">$|V(P_{y, z})| \leq 3k+1$</text>
+<text layer="weźmy" matrix="1 0 0 1 48 0" transformations="translations" pos="528 160" stroke="black" type="minipage" width="656" height="20.9244" depth="6.972" valign="top">Weźmy $(n, k+1, 3k+1)-$koślawą rodzinę na $V(G)$</text>
+<path layer="AB3" stroke="black" fill="lightgreen" opacity="50%" stroke-opacity="opaque">
+336 352
+208 336
+144 272
+192 208
+320 272
+384 320 u
+</path>
+<path stroke="black" fill="red" opacity="30%" stroke-opacity="opaque">
+128 448
+192 560
+336 528
+384 464
+368 400
+176 432 u
+</path>
+<path layer="paths" stroke="darkorange" fill="red">
+160 464 m
+208 512 l
+</path>
+<path stroke="darkorange" fill="red">
+208 512 m
+240 480 l
+</path>
+<path stroke="darkorange" fill="red">
+240 480 m
+304 496 l
+</path>
+<path stroke="darkorange" fill="red">
+304 496 m
+336 480 l
+</path>
+<path stroke="darkorange" fill="red">
+336 480 m
+352 448 l
+</path>
+<path stroke="darkorange" fill="red">
+352 448 m
+272 432 l
+</path>
+<use name="mark/disk(sx)" pos="176 272" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="352 320" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="160 464" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="208 512" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="240 480" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="304 496" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="336 480" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="352 448" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="272 432" size="normal" stroke="darkorange"/>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="192 464" stroke="darkorange" type="label" width="49.4004" height="19.0624" depth="7.98" valign="baseline">$P_{y, z}$</text>
+<text matrix="1 0 0 1 32 -160" transformations="translations" pos="192 464" stroke="darkred" type="label" width="51.7692" height="19.0624" depth="7.98" valign="baseline" style="math">P_{u, x}</text>
+<use name="mark/disk(sx)" pos="272 272" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="304 304" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="336 304" size="normal" stroke="darkred"/>
+<path stroke="darkred" fill="red">
+176 272 m
+224 272 l
+</path>
+<path stroke="darkred" fill="red">
+224 272 m
+272 272 l
+</path>
+<path stroke="darkred" fill="red">
+272 272 m
+304 304 l
+</path>
+<path stroke="darkred" fill="red">
+304 304 m
+336 304 l
+</path>
+<path stroke="darkred" fill="red">
+336 304 m
+352 320 l
+</path>
+<path stroke="darkred" dash="dashed">
+176 272 m
+256 208
+336 224
+304 352
+352 320 c
+</path>
+<path layer="F3" stroke="black" fill="blue" opacity="10%" stroke-opacity="opaque">
+112 368
+160 192
+336 192
+448 256
+480 400 u
+</path>
+<text transformations="translations" pos="400 336" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline">$F$</text>
+<group layer="fpt" matrix="1 0 0 1 96 0">
+<text matrix="1 0 0 1 112 2.9406" transformations="translations" pos="528 80" stroke="black" type="minipage" width="272" height="25.9252" depth="11.956" valign="top">$\binom{4k+2}{k+1}\cdot2^{{\sf o}(4k+2)}\cdot\log n$</text>
+<path stroke="darkgray" dash="dashed">
+624 96 m
+624 32 l
+928 32 l
+928 96 l
+h
+</path>
+</group>
+<use layer="paths" name="mark/disk(sx)" pos="288 464" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="192 480" size="normal" stroke="darkorange"/>
+<use name="mark/disk(sx)" pos="312.475 440.095" size="normal" stroke="darkorange"/>
+<path stroke="darkorange" fill="red">
+160 464 m
+192 480 l
+</path>
+<path stroke="darkorange" fill="red">
+272 432 m
+288 464 l
+</path>
+<path layer="paths2" stroke="white" fill="red">
+160 464 m
+208 512 l
+</path>
+<path stroke="white" fill="red">
+208 512 m
+240 480 l
+</path>
+<path stroke="white" fill="red">
+240 480 m
+304 496 l
+</path>
+<path stroke="white" fill="red">
+304 496 m
+336 480 l
+</path>
+<path stroke="white" fill="red">
+336 480 m
+352 448 l
+</path>
+<path stroke="white" fill="red">
+352 448 m
+272 432 l
+</path>
+<use name="mark/disk(sx)" pos="176 272" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="352 320" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="160 464" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="208 512" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="240 480" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="304 496" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="336 480" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="352 448" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="272 432" size="normal" stroke="white"/>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="192 464" stroke="white" type="label" width="49.4004" height="19.0624" depth="7.98" valign="baseline" style="math">P_{y, z}</text>
+<text matrix="1 0 0 1 32 -160" transformations="translations" pos="192 464" stroke="darkred" type="label" width="51.7692" height="19.0624" depth="7.98" valign="baseline" style="math">P_{u, x}</text>
+<use name="mark/disk(sx)" pos="272 272" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="304 304" size="normal" stroke="darkred"/>
+<use name="mark/disk(sx)" pos="336 304" size="normal" stroke="darkred"/>
+<path stroke="darkred" fill="red">
+176 272 m
+224 272 l
+</path>
+<path stroke="darkred" fill="red">
+224 272 m
+272 272 l
+</path>
+<path stroke="darkred" fill="red">
+272 272 m
+304 304 l
+</path>
+<path stroke="darkred" fill="red">
+304 304 m
+336 304 l
+</path>
+<path stroke="darkred" fill="red">
+336 304 m
+352 320 l
+</path>
+<path stroke="darkred" dash="dashed">
+176 272 m
+256 208
+336 224
+304 352
+352 320 c
+</path>
+<use name="mark/disk(sx)" pos="288 464" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="192 480" size="normal" stroke="white"/>
+<use name="mark/disk(sx)" pos="312.475 440.095" size="normal" stroke="white"/>
+<path stroke="white" fill="red">
+160 464 m
+192 480 l
+</path>
+<path stroke="white" fill="red">
+272 432 m
+288 464 l
 </path>
 </page>
 </ipe>

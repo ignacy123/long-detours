@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230507131730"/>
+<info created="D:20230503102830" modified="D:20230507132941"/>
 <preamble>\usepackage{polski}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -488,7 +488,9 @@ h
 </page>
 <page title="Pomysł">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
 <path layer="alpha" matrix="1 0 0 1 128 -116.01" stroke="black">
 64 608 m
 64 320 l
@@ -569,11 +571,14 @@ h
 h
 </path>
 <text matrix="1 0 0 1 624.331 -132.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.3376" height="19.0736" depth="4.172" valign="baseline" style="math">L_r</text>
+<text layer="beta" matrix="1 0 0 1 -100.194 0" transformations="translations" pos="576 96" stroke="black" type="label" width="264.387" height="20.972" depth="6.972" valign="baseline" style="math">|P&apos;| \geq {\sf dist}_G(s, t) + \textbf{2k}</text>
 </page>
 <page title="Trochę szczegółów">
 <layer name="alpha"/>
+<layer name="gamma"/>
 <layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha gamma" active="gamma"/>
 <view layers="alpha beta" active="beta"/>
 <path layer="alpha" matrix="1 0 0 1 64 -196.01" stroke="black">
 64 608 m
@@ -730,6 +735,10 @@ h
 <text matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="black" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
 <text matrix="1 0 0 1 5.247 -6.0046" transformations="translations" pos="16 448" stroke="black" type="label" width="67.6648" height="17.1584" depth="0" valign="baseline" style="math">z \rightarrow t</text>
 <text layer="alpha" matrix="1 0 0 1 648.631 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="110.737" height="19.068" depth="9.912" valign="baseline" style="math">L_{{\sf dist}_G(s, t)}</text>
+<path layer="gamma" stroke="black" arrow="normal/normal">
+160 171.99 m
+416 363.99 l
+</path>
 </page>
 <page title="Lemat 3">
 <layer name="alpha"/>

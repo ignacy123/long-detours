@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230507013321"/>
+<info created="D:20230503102830" modified="D:20230507131730"/>
 <preamble>\usepackage{polski}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -738,6 +738,7 @@ h
 <layer name="eta"/>
 <layer name="beta"/>
 <layer name="delta"/>
+<layer name="mu"/>
 <layer name="theta"/>
 <layer name="epsilon"/>
 <layer name="iota"/>
@@ -745,12 +746,48 @@ h
 <layer name="lambda"/>
 <view layers="alpha gamma zeta eta beta" active="alpha"/>
 <view layers="alpha gamma zeta beta delta" active="delta"/>
-<view layers="alpha beta delta" active="delta"/>
-<view layers="alpha beta delta theta" active="theta"/>
-<view layers="alpha beta delta theta epsilon" active="epsilon"/>
-<view layers="alpha beta delta theta epsilon iota" active="iota"/>
-<view layers="alpha beta delta theta epsilon iota kappa" active="kappa"/>
-<view layers="alpha beta delta theta epsilon iota kappa lambda" active="lambda"/>
+<view layers="alpha beta delta mu" active="mu"/>
+<view layers="alpha beta delta mu theta" active="theta"/>
+<view layers="alpha beta delta mu theta epsilon" active="epsilon"/>
+<view layers="alpha beta delta mu theta epsilon iota" active="iota"/>
+<view layers="alpha beta delta mu theta epsilon iota kappa" active="kappa"/>
+<view layers="alpha beta delta mu theta epsilon iota kappa lambda" active="lambda"/>
+<path layer="delta" stroke="seagreen" arrow="normal/normal">
+928 363.99 m
+560 304
+544.001 226.244 c
+</path>
+<path layer="alpha" matrix="1 0 0 1 0 112" stroke="darkmagenta" dash="dashed" arrow="normal/normal">
+416 251.99 m
+928 251.99 l
+</path>
+<path layer="zeta" matrix="1 0 0 1 512 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path layer="alpha" matrix="1 0 0 1 320 -196.01" stroke="black">
+64 608 m
+64 320 l
+128 320 l
+128 608 l
+h
+</path>
+<path layer="gamma" stroke="purple" pen="ultrafat" arrow="normal/normal">
+416 171.99 m
+464 320
+608 171.99 c
+</path>
+<path matrix="1 0 0 1 0 -80" stroke="darkcyan" dash="dashed" arrow="normal/normal">
+800 347.99 m
+416 443.99 l
+</path>
+<path matrix="1 0 0 1 0 -272" stroke="brown" dash="dashed" arrow="normal/normal">
+416 443.99 m
+608 443.99 l
+</path>
 <path layer="alpha" matrix="1 0 0 1 960 -196.01" stroke="black">
 64 608 m
 64 320 l
@@ -765,7 +802,7 @@ h
 128 608 l
 h
 </path>
-<path layer="eta" matrix="1 0 0 1 128 112" stroke="red" pen="ultrafat" arrow="normal/normal">
+<path layer="eta" matrix="1 0 0 1 128 112" stroke="red" dash="dashed" pen="ultrafat" arrow="normal/normal">
 800 251.99 m
 841.461 273.662
 880.178 217.91
@@ -785,15 +822,8 @@ h
 128 608 l
 h
 </path>
-<path layer="alpha" matrix="1 0 0 1 320 -196.01" stroke="black">
-64 608 m
-64 320 l
-128 320 l
-128 608 l
-h
-</path>
-<text matrix="1 0 0 1 48.061 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
-<path layer="zeta" matrix="1 0 0 1 0 -80" stroke="black" arrow="normal/normal">
+<text layer="alpha" matrix="1 0 0 1 48.061 -212.01" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
+<path layer="zeta" matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
 160 251.99 m
 416 251.99 l
 </path>
@@ -807,29 +837,14 @@ h
 h
 </path>
 <text matrix="1 0 0 1 205.028 -183.324" transformations="translations" pos="608 448" stroke="black" type="label" width="14.6776" height="12.0316" depth="5.404" valign="baseline" style="math">y</text>
-<path matrix="1 0 0 1 512 -196.01" stroke="black">
-64 608 m
-64 320 l
-128 320 l
-128 608 l
-h
-</path>
 <group layer="beta" matrix="1 0 0 1 0 -272">
 <use matrix="1 0 0 1 64 -116.01" name="mark/disk(sx)" pos="96 560" size="normal" stroke="black"/>
 <text matrix="1 0 0 1 57.462 -116.01" transformations="translations" pos="96 528" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
 </group>
 <text layer="alpha" matrix="1 0 0 1 56.7382 29.9854" transformations="translations" pos="352 352" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
-<path matrix="1 0 0 1 0 112" stroke="black" dash="dashed" arrow="normal/normal">
-416 251.99 m
-928 251.99 l
-</path>
 <text matrix="1 0 0 1 314.963 -4.01" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
 <text matrix="1 0 0 1 312.028 -116.01" transformations="translations" pos="608 448" stroke="black" type="label" width="14.1988" height="12.0092" depth="0" valign="baseline" style="math">z</text>
 <path layer="gamma" matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
-800 347.99 m
-416 443.99 l
-</path>
-<path matrix="1 0 0 1 0 -80" stroke="black" dash="dashed" arrow="normal/normal">
 608 251.99 m
 624 304
 752 272
@@ -852,22 +867,13 @@ h
 <text matrix="1 0 0 1 5.247 -26.8911" transformations="translations" pos="16 544" stroke="black" type="label" width="136.035" height="20.9244" depth="6.972" valign="baseline">$y \rightarrow v$ : $(k)$</text>
 <text matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="black" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
 <text matrix="1 0 0 1 5.247 -6.0046" transformations="translations" pos="16 448" stroke="red" type="label" width="67.6648" height="17.1584" depth="0" valign="baseline" style="math">z \rightarrow t</text>
-<path layer="zeta" matrix="1 0 0 1 0 -272" stroke="red" pen="ultrafat" arrow="normal/normal">
-416 443.99 m
-608 443.99 l
-</path>
-<path layer="beta" matrix="1 0 0 1 -16 0" stroke="black" dash="dashed" arrow="normal/normal">
+<path layer="mu" matrix="1 0 0 1 -16 0" stroke="black" dash="dashed" arrow="normal/normal">
 176 171.99 m
 432 363.99 l
 </path>
-<path layer="delta" stroke="seagreen" arrow="normal/normal">
-928 363.99 m
-560 304
-543.857 171.99 c
-</path>
 <use layer="zeta" matrix="1 0 0 1 0 -308.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
 <use layer="alpha" matrix="1 0 0 1 64 -388.01" name="mark/disk(sx)" pos="352 560" size="normal" stroke="black"/>
-<text layer="delta" matrix="1 0 0 1 37.4953 -4.01" transformations="translations" pos="496 144" stroke="black" type="label" width="20.7228" height="12.0092" depth="0" valign="baseline" style="math">w</text>
+<text layer="delta" matrix="1 0 0 1 37.4953 100.99" transformations="translations" pos="496 144" stroke="black" type="label" width="20.7228" height="12.0092" depth="0" valign="baseline" style="math">w</text>
 <path layer="theta" matrix="1 0 0 1 448 -196.01" stroke="black">
 64 608 m
 64 320 l
@@ -894,7 +900,7 @@ h
 <text matrix="1 0 0 1 -0.2722 -5.4828" transformations="translations" pos="464 272" stroke="black" type="label" width="32.5444" height="2.9456" depth="0" valign="baseline" style="math">\ldots</text>
 <text matrix="1 0 0 1 511.728 -5.4828" transformations="translations" pos="464 272" stroke="black" type="label" width="32.5444" height="2.9456" depth="0" valign="baseline" style="math">\ldots</text>
 <path layer="delta" stroke="seagreen" arrow="normal/normal">
-543.857 171.99 m
+544.001 226.244 m
 592 112
 608 112
 944 112
@@ -902,27 +908,29 @@ h
 1120 368
 1056 363.99 c
 </path>
+<text layer="iota" matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="blue" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
+<use layer="alpha" matrix="1 0 0 1 320 -4.01" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
+<text layer="lambda" matrix="1 0 0 1 384 -32" transformations="translations" pos="256 496" stroke="black" type="label" width="518.602" height="20.9244" depth="6.972" valign="baseline" style="math">2k - j_2 + (j_2 - j_1) = 2k - j_1 \geq 2k - k = k</text>
+<group layer="epsilon" matrix="1 0 0 1 0 -64">
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="256 624" stroke="black" type="label" width="85.1956" height="18.4184" depth="5.404" valign="baseline" style="math">j_2 \leq j_3</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="384 608" stroke="black" type="label" width="85.1956" height="18.4184" depth="5.404" valign="baseline" style="math">j_1 &lt; j_2</text>
+</group>
+<text layer="iota" matrix="1 0 0 1 0 -63.2342" transformations="translations" pos="256 528" stroke="blue" type="label" width="87.444" height="19.3928" depth="5.404" valign="baseline" style="math">2k - j_2</text>
+<text layer="kappa" matrix="1 0 0 1 0 -79.2342" transformations="translations" pos="400 544" stroke="purple" type="label" width="82.0988" height="18.4184" depth="5.404" valign="baseline" style="math">j_2 - j_1</text>
+<path stroke="purple" arrow="normal/normal">
+928 363.99 m
+560 304
+544.001 226.244 c
+</path>
+<text layer="gamma" matrix="1 0 0 1 -6.8194 32" transformations="translations" pos="496 176" stroke="purple" type="label" width="13.6388" height="19.3704" depth="0" valign="baseline">k</text>
+<use layer="delta" matrix="1 0 0 1 32.1436 54.2536" name="mark/disk(sx)" pos="511.857 171.99" size="normal" stroke="black"/>
+<text layer="alpha" matrix="1 0 0 1 -29.7342 80" transformations="translations" pos="544 528" stroke="black" type="label" width="187.468" height="20.9692" depth="10.696" valign="baseline" style="math">\textcolor{purple}{P&apos;_{u, x}} \cap \textcolor{red}{P_{z, t}} = \varnothing</text>
 <path layer="iota" matrix="1 0 0 1 0 112" stroke="blue" dash="dashed" arrow="normal/normal">
 416 251.99 m
 928 251.99 l
 </path>
-<use layer="alpha" matrix="1 0 0 1 64 -4.01" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
-<text layer="iota" matrix="1 0 0 1 5.247 -34.3308" transformations="translations" pos="16 512" stroke="blue" type="label" width="149.506" height="20.9244" depth="6.972" valign="baseline">$v \rightarrow z$ : $(2k)$</text>
-<use layer="alpha" matrix="1 0 0 1 320 -4.01" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
-<text layer="lambda" matrix="1 0 0 1 0 -32" transformations="translations" pos="256 496" stroke="black" type="label" width="518.602" height="20.9244" depth="6.972" valign="baseline" style="math">2k - j_2 + (j_2 - j_1) = 2k - j_1 \geq 2k - k = k</text>
-<group layer="epsilon">
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="256 624" stroke="black" type="label" width="85.1956" height="18.4184" depth="5.404" valign="baseline" style="math">j_2 \leq j_3</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="384 608" stroke="black" type="label" width="85.1956" height="18.4184" depth="5.404" valign="baseline" style="math">j_1 &lt; j_2</text>
-</group>
-<text layer="iota" matrix="1 0 0 1 0 0.7658" transformations="translations" pos="256 528" stroke="blue" type="label" width="87.444" height="19.3928" depth="5.404" valign="baseline" style="math">2k - j_2</text>
-<text layer="kappa" matrix="1 0 0 1 0 -15.2342" transformations="translations" pos="400 544" stroke="purple" type="label" width="82.0988" height="18.4184" depth="5.404" valign="baseline" style="math">j_2 - j_1</text>
-<path stroke="purple" arrow="normal/normal">
-928 363.99 m
-560 304
-543.857 171.99 c
-</path>
 <use layer="alpha" matrix="1 0 0 1 320 -116.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
-<use layer="delta" matrix="1 0 0 1 32 0" name="mark/disk(sx)" pos="511.857 171.99" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 64 -4.01" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
 </page>
 <page title="Lemat 4">
 <layer name="base"/>
@@ -1218,7 +1226,7 @@ h
 416 251.99 m
 928 251.99 l
 </path>
-<text matrix="1 0 0 1 314.963 -0" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
+<text matrix="1 0 0 1 314.963 0" transformations="translations" pos="736 336" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
 <text matrix="1 0 0 1 312.028 -112" transformations="translations" pos="608 448" stroke="black" type="label" width="14.1988" height="12.0092" depth="0" valign="baseline" style="math">z</text>
 <path matrix="1 0 0 1 128 116.01" stroke="black" dash="dashed" arrow="normal/normal">
 800 251.99 m
@@ -1297,8 +1305,8 @@ h
 784 432
 1056 368 c
 </path>
-<use layer="alpha" matrix="1 0 0 1 64 -0" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
-<use matrix="1 0 0 1 320 -0" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
+<use layer="alpha" matrix="1 0 0 1 64 0" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
+<use matrix="1 0 0 1 320 0" name="mark/disk(sx)" pos="736 368" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="416 176" size="normal" stroke="black"/>
 <use name="mark/disk(sx)" pos="608 176" size="normal" stroke="black"/>
 <text layer="step_1" matrix="1 0 0 1 38.7382 25.9954" transformations="translations" pos="352 352" stroke="red" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
@@ -1354,7 +1362,7 @@ h
 544 560
 240 640 u
 </path>
-<text matrix="1 0 0 1 32 -64" transformations="translations" pos="16 592" stroke="black" type="label" width="22.0864" height="19.0624" depth="0" valign="baseline">$U$</text>
+<text matrix="1 0 0 1 32 -64" transformations="translations" pos="16 592" stroke="black" type="label" width="22.0864" height="19.0624" depth="0" valign="baseline" style="math">U</text>
 <text layer="alpha" matrix="1 0 0 1 -64 32" transformations="translations" pos="640 576" stroke="black" type="minipage" width="512" height="20.594" depth="6.664" valign="top">$\mathbb{F} \subseteq 2^U$</text>
 <text matrix="1 0 0 1 -64 -16" transformations="translations" pos="640 576" stroke="black" type="minipage" width="512" height="37.6544" depth="23.716" valign="top">$\mathbb{F}$ jest $(n, p, q)-$\emph{koślawą uniwersalną rodziną} nad $U$ ($U$ rozmiaru $n$), jeżeli dla dowolnych</text>
 <text matrix="1 0 0 1 -64 48" transformations="translations" pos="640 432" stroke="black" type="minipage" width="192" height="26.5384" depth="12.6" valign="top">$A\subseteq \binom{U}{\leq p}$</text>
@@ -1383,7 +1391,7 @@ h
 384 272
 400 544 u
 </path>
-<text matrix="1 0 0 1 5.5392 -33.5312" transformations="translations" pos="256 416" stroke="black" type="label" width="20.9216" height="19.0624" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 5.5392 -33.5312" transformations="translations" pos="256 416" stroke="black" type="label" width="20.9216" height="19.0624" depth="0" valign="baseline" style="math">A</text>
 <text matrix="1 0 0 1 117.539 -145.531" transformations="translations" pos="256 416" stroke="black" type="label" width="22.5596" height="19.0624" depth="0" valign="baseline" style="math">B</text>
 <text layer="F1" matrix="1 0 0 1 -42.4608 94.4688" transformations="translations" pos="256 416" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline" style="math">F</text>
 <path layer="F2" stroke="black" fill="blue" opacity="10%" stroke-opacity="opaque">
@@ -1408,7 +1416,7 @@ h
 288 224
 261.955 294.757 u
 </path>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="336 304" stroke="black" type="label" width="20.9216" height="19.0624" depth="0" valign="baseline">$A$</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="336 304" stroke="black" type="label" width="20.9216" height="19.0624" depth="0" valign="baseline" style="math">A</text>
 <text layer="F2" matrix="1 0 0 1 -16 128" transformations="translations" pos="336 304" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline" style="math">F</text>
 <text layer="AB2" matrix="1 0 0 1 -144 64" transformations="translations" pos="336 304" stroke="black" type="label" width="22.5596" height="19.0624" depth="0" valign="baseline" style="math">B</text>
 <text layer="cel" matrix="1 0 0 1 512 144" transformations="translations" pos="64 128" stroke="black" type="minipage" width="336" height="39.5192" depth="25.62" valign="top">Cel: $P&apos;_{u, x}$ długości $k$ takie, 
@@ -1466,7 +1474,7 @@ h
 <use name="mark/disk(sx)" pos="336 480" size="normal" stroke="darkorange"/>
 <use name="mark/disk(sx)" pos="352 448" size="normal" stroke="darkorange"/>
 <use name="mark/disk(sx)" pos="272 432" size="normal" stroke="darkorange"/>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="192 464" stroke="darkorange" type="label" width="49.4004" height="19.0624" depth="7.98" valign="baseline">$P_{y, z}$</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="192 464" stroke="darkorange" type="label" width="49.4004" height="19.0624" depth="7.98" valign="baseline" style="math">P_{y, z}</text>
 <text matrix="1 0 0 1 32 -160" transformations="translations" pos="192 464" stroke="darkred" type="label" width="51.7692" height="19.0624" depth="7.98" valign="baseline" style="math">P_{u, x}</text>
 <use name="mark/disk(sx)" pos="272 272" size="normal" stroke="darkred"/>
 <use name="mark/disk(sx)" pos="304 304" size="normal" stroke="darkred"/>
@@ -1505,7 +1513,7 @@ h
 448 256
 480 400 u
 </path>
-<text transformations="translations" pos="400 336" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline">$F$</text>
+<text transformations="translations" pos="400 336" stroke="black" type="label" width="21.812" height="19.0624" depth="0" valign="baseline" style="math">F</text>
 <group layer="fpt" matrix="1 0 0 1 96 0">
 <text matrix="1 0 0 1 112 2.9406" transformations="translations" pos="528 80" stroke="black" type="minipage" width="272" height="25.9252" depth="11.956" valign="top">$\binom{4k+2}{k+1}\cdot2^{{\sf o}(4k+2)}\cdot\log n$</text>
 <path stroke="darkgray" dash="dashed">

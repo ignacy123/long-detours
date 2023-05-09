@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230509191330"/>
+<info created="D:20230503102830" modified="D:20230509211650"/>
 <preamble>\usepackage{polski}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -1280,7 +1280,7 @@ h
 800 347.99 c
 </path>
 <text matrix="1 0 0 1 56.0158 -384" transformations="translations" pos="352 528" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
-<path matrix="1 0 0 1 0 -267.99" stroke="darkred" dash="dashed" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -267.99" stroke="purple" dash="dashed" arrow="normal/normal">
 416 443.99 m
 608 443.99 l
 </path>
@@ -1309,8 +1309,8 @@ h
 416 251.99 l
 </path>
 <text matrix="1 0 0 1 -207.939 -208" transformations="translations" pos="352 288" stroke="lightgray" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_0</text>
-<text layer="step_3" matrix="1 0 0 1 0 -96" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">3: Znajdź ${\color{darkred} P&apos;_{u, x}}$ długości $k$ takie, że ${\color{darkred} P&apos;_{u, x}} \cap {\color{darkorange}P_{y, z}} = \emptyset$.</text>
-<text layer="step_4" matrix="1 0 0 1 0 -144" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">4: Znajdź rozłączne ${\color{darkcyan} P&apos;_{x, v}}$ i ${\color{darkmagenta}P&apos;_{v, t}}$.</text>
+<text layer="step_3" matrix="1 0 0 1 0 -96" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">3: Znajdź ${\color{purple} P&apos;_{u, x}}$ długości $k$ takie, że ${\color{purple} P&apos;_{u, x}} \cap {\color{darkorange}P_{y, z}} = \emptyset$.</text>
+<text layer="step_4" matrix="1 0 0 1 0 -144" transformations="translations" pos="320 640" stroke="black" type="minipage" width="832" height="22.8172" depth="8.848" valign="top">4: Znajdź rozłączne ${\color{darkcyan} P&apos;_{x, v}}$ i ${\color{darkred}P&apos;_{v, t}}$.</text>
 <text layer="step_3" matrix="1 0 0 1 48 -38.1474" transformations="translations" pos="912 576" stroke="red" type="minipage" width="256" height="16.6824" depth="2.688" valign="top">$\leftarrow $???</text>
 <text layer="step_4" matrix="1 0 0 1 -192 -83.4342" transformations="translations" pos="912 576" stroke="red" type="minipage" width="256" height="19.3928" depth="5.404" valign="top">$\leftarrow 2$-disjoint paths </text>
 <path layer="step_2" stroke="black" pen="ultrafat" arrow="normal/normal">
@@ -1318,7 +1318,7 @@ h
 288 240
 416 176 c
 </path>
-<path layer="step_3" stroke="darkred" pen="ultrafat" arrow="normal/normal">
+<path layer="step_3" stroke="purple" pen="ultrafat" arrow="normal/normal">
 416 176 m
 464 240
 480 80
@@ -1330,7 +1330,7 @@ h
 704 256
 416 368 c
 </path>
-<path stroke="darkmagenta" pen="ultrafat" arrow="normal/normal">
+<path stroke="darkred" pen="ultrafat" arrow="normal/normal">
 416 368 m
 784 432
 1056 368 c
@@ -1788,7 +1788,7 @@ h
 340.097 87.5074
 480 112 c
 </path>
-<path layer="P2" stroke="darkred" pen="fat" arrow="arc/normal" opacity="30%" stroke-opacity="opaque">
+<path layer="P2" stroke="purple" pen="fat" arrow="arc/normal" opacity="30%" stroke-opacity="opaque">
 480 112 m
 539.176 80.9899
 576.053 149.465
@@ -1796,13 +1796,13 @@ h
 672 128 c
 </path>
 <use layer="uvx" name="mark/disk(sx)" pos="480 112" size="normal" stroke="black"/>
-<path layer="P3" stroke="purple" pen="fat" opacity="30%" stroke-opacity="opaque">
+<path layer="P3" stroke="darkcyan" pen="fat" opacity="30%" stroke-opacity="opaque">
 672 128 m
 529.104 171.642
 480 208
 480 208 c
 </path>
-<path stroke="purple" pen="fat" arrow="arc/normal" opacity="30%" stroke-opacity="opaque">
+<path stroke="darkcyan" pen="fat" arrow="arc/normal" opacity="30%" stroke-opacity="opaque">
 480 208 m
 545.694 284.809
 864 160 c

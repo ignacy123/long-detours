@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230509170620"/>
+<info created="D:20230503102830" modified="D:20230509191330"/>
 <preamble>\usepackage{polski}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -1732,7 +1732,7 @@ h
 <text matrix="1 0 0 1 -207.939 -256" transformations="translations" pos="352 288" stroke="black" type="label" width="31.5" height="19.0736" depth="4.172" valign="baseline" style="math">L_0</text>
 <text matrix="1 0 0 1 688.061 -256" transformations="translations" pos="352 288" stroke="black" type="label" width="31.3376" height="19.0736" depth="4.172" valign="baseline" style="math">L_r</text>
 <use layer="steps_6-15" name="mark/disk(sx)" pos="160 160" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 9.462 0" transformations="translations" pos="144 128" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline">$s$</text>
+<text matrix="1 0 0 1 9.462 0" transformations="translations" pos="144 128" stroke="black" type="label" width="13.076" height="12.0092" depth="0" valign="baseline" style="math">s</text>
 <text matrix="1 0 0 1 713.462 0" transformations="translations" pos="144 128" stroke="black" type="label" width="10.0744" height="17.1584" depth="0" valign="baseline" style="math">t</text>
 <text layer="layering" matrix="1 0 0 1 464.061 -256" transformations="translations" pos="352 288" stroke="black" type="label" width="110.737" height="19.068" depth="9.912" valign="baseline" style="math">L_{{\sf dist}_G(s, t)}</text>
 <text layer="uvx" matrix="1 0 0 1 329.462 -48" transformations="translations" pos="144 128" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
@@ -1812,13 +1812,16 @@ h
 <use name="mark/disk(sx)" pos="480 208" size="normal" stroke="black"/>
 <text layer="P" matrix="1 0 0 1 107.648 -253.531" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
 </page>
-<page title="Złożność">
+<page title="Złożoność">
 <layer name="alpha"/>
 <layer name="F1"/>
 <layer name="F2"/>
+<layer name="F3"/>
 <layer name="FPT"/>
-<view layers="alpha F2" active="FPT"/>
-<view layers="alpha F2 FPT" active="FPT"/>
+<layer name="poprawka_złożności"/>
+<view layers="alpha F2 F3" active="F3"/>
+<view layers="alpha F2 F3 FPT" active="FPT"/>
+<view layers="alpha F2 poprawka_złożności" active="poprawka_złożności"/>
 <text layer="alpha" matrix="1 0 0 1 0 -1.99491" transformations="translations" pos="16 624" stroke="black" type="minipage" width="1136" height="20.9244" depth="6.972" valign="top">\textcolor{white}{0}3:\; {\bf for} $l \in [k, 2k-1]$ {\bf do}</text>
 <text matrix="1 0 0 1 0 -51.8486" transformations="translations" pos="16 624" stroke="blue" type="minipage" width="1184" height="20.9244" depth="6.972" valign="top">\textcolor{white}{0}4:\; \quad EXACT $(s, t)-$DETOUR z parametrem $l$</text>
 <text matrix="1 0 0 1 0 -101.702" transformations="translations" pos="16 624" stroke="black" type="minipage" width="1184" height="16.6824" depth="2.688" valign="top">\textcolor{white}{0}5:\; {\bf end for}</text>
@@ -1827,7 +1830,7 @@ h
 \quad \quad rodziny uniwersalnej</text>
 <text matrix="1 0 0 1 0 -224.806" transformations="translations" pos="16 624" stroke="black" type="minipage" width="1184" height="17.2144" depth="3.248" valign="top">\textcolor{white}{0}8:\; {\bf for} $F \in \mathbf{F}$ {\bf do}</text>
 <text matrix="1 0 0 1 0 -267.226" transformations="translations" pos="16 624" stroke="black" type="minipage" width="1184" height="21.4256" depth="7.476" valign="top">\textcolor{white}{0}9:\; \quad {\bf for} $p \in [r]$ i $u, v, x \in V(G)$, gdzie $u, v\in L_p$ {\bf do}</text>
-<text matrix="1 0 0 1 0 -318.085" transformations="translations" pos="16 624" stroke="blue" type="minipage" width="1184" height="20.9244" depth="6.972" valign="top">11:\; \quad \quad EXACT $(u, x)-$PATH</text>
+<text matrix="1 0 0 1 0 -318.085" transformations="translations" pos="16 624" stroke="blue" type="minipage" width="1184" height="20.9244" depth="6.972" valign="top">11:\; \quad \quad EXACT $k-(u, x)-$PATH</text>
 <text matrix="1 0 0 1 0 -367.939" transformations="translations" pos="16 624" stroke="darkgreen" type="minipage" width="1184" height="16.6824" depth="2.688" valign="top">12:\; \quad \quad 2-DISJOINT PATHS</text>
 <text matrix="1 0 0 1 0 -450.594" transformations="translations" pos="16 624" stroke="black" type="minipage" width="1184" height="16.6824" depth="2.688" valign="top">14:\; {\bf end for}</text>
 <text matrix="1 0 0 1 0 -409.266" transformations="translations" pos="16 624" stroke="black" type="minipage" width="1184" height="16.6824" depth="2.688" valign="top">13:\; \quad {\bf end for}</text>
@@ -1835,9 +1838,18 @@ h
 <text layer="F1" matrix="1 0 0 1 240 386.941" transformations="translations" pos="528 80" stroke="blue" type="minipage" width="272" height="25.9252" depth="11.956" valign="top">$\binom{4k+2}{k+1}\cdot2^{{\sf o}(4k+2)}\cdot\log n$</text>
 <text layer="alpha" matrix="1 0 0 1 752 -53.4124" transformations="translations" pos="16 624" stroke="blue" type="minipage" width="1184" height="19.3648" depth="5.404" valign="top">$6.745^kn^{O(1)}$</text>
 <text layer="F2" matrix="1 0 0 1 240 388.254" transformations="translations" pos="528 80" stroke="blue" type="minipage" width="272" height="24.1668" depth="10.22" valign="top">$(\frac{256}{27})^k\cdot2^{{\sf o}(k)}\cdot n^2$</text>
-<text matrix="1 0 0 1 240 224.351" transformations="translations" pos="528 80" stroke="blue" type="minipage" width="272" height="19.3648" depth="5.404" valign="top">$3^kn^{O(1)}$</text>
+<text layer="F3" matrix="1 0 0 1 240 224.351" transformations="translations" pos="528 80" stroke="blue" type="minipage" width="272" height="19.3648" depth="5.404" valign="top">$4.884^kn^{O(1)}$</text>
+<text layer="poprawka_złożności" matrix="1 0 0 1 192 14.4424" transformations="translations" pos="224 80" stroke="red" type="minipage" width="384" height="21.4088" depth="7.476" valign="top" size="large" style="center">$24.615^kn^{O(1)}$ - FPT</text>
+<path layer="FPT" stroke="black" dash="dashed" pen="fat">
+464 112 m
+464 48 l
+752 48 l
+752 112 l
+h
+</path>
+<text layer="poprawka_złożności" matrix="1 0 0 1 240 224.351" transformations="translations" pos="528 80" stroke="red" type="minipage" width="272" height="19.3648" depth="5.404" valign="top">$2.59606^kn^{O(1)}$</text>
 <text layer="FPT" matrix="1 0 0 1 192 14.4424" transformations="translations" pos="224 80" stroke="black" type="minipage" width="384" height="21.4088" depth="7.476" valign="top" size="large" style="center">$46.308^kn^{O(1)}$ - FPT</text>
-<path stroke="black" dash="dashed" pen="fat">
+<path layer="poprawka_złożności" stroke="red" dash="dashed" pen="fat">
 464 112 m
 464 48 l
 752 48 l

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20230503102830" modified="D:20230510184932"/>
+<info created="D:20230503102830" modified="D:20230510193244"/>
 <preamble>\usepackage{polski}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -773,14 +773,8 @@ h
 832 288
 800 347.99 c
 </path>
-<path layer="alpha" matrix="1 0 0 1 0 -80" stroke="darkcyan" dash="dashed" arrow="normal/normal">
-800 347.99 m
-416 443.99 l
-</path>
-<use matrix="1 0 0 1 64 -4.01" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
-<text matrix="1 0 0 1 -100.194 464" transformations="translations" pos="576 96" stroke="black" type="label" width="256.561" height="20.9244" depth="6.972" valign="baseline" style="math">|P| \geq {\sf dist}_G(s, t) + \textbf{2k}</text>
-<use layer="delta" matrix="1 0 0 1 192 -212.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
-<path layer="alpha" matrix="1 0 0 1 832 -196.01" stroke="black">
+<text layer="alpha" matrix="1 0 0 1 -100.194 464" transformations="translations" pos="576 96" stroke="black" type="label" width="256.561" height="20.9244" depth="6.972" valign="baseline" style="math">|P| \geq {\sf dist}_G(s, t) + \textbf{2k}</text>
+<path matrix="1 0 0 1 832 -196.01" stroke="black">
 64 608 m
 64 320 l
 128 320 l
@@ -802,6 +796,12 @@ h
 928 251.99 l
 </path>
 <use matrix="1 0 0 1 320 -116.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
+<path layer="alpha" matrix="1 0 0 1 0 -80" stroke="darkcyan" dash="dashed" arrow="normal/normal">
+800 347.99 m
+416 443.99 l
+</path>
+<use matrix="1 0 0 1 64 -4.01" name="mark/disk(sx)" pos="352 368" size="normal" stroke="black"/>
+<use layer="delta" matrix="1 0 0 1 192 -212.01" name="mark/disk(sx)" pos="608 480" size="normal" stroke="black"/>
 </page>
 <page title="Lemat 1">
 <layer name="alpha"/>
@@ -1815,21 +1815,6 @@ h
 <text layer="uvx" matrix="1 0 0 1 329.462 -48" transformations="translations" pos="144 128" stroke="black" type="label" width="15.9684" height="12.0092" depth="0" valign="baseline" style="math">u</text>
 <text matrix="1 0 0 1 329.462 96" transformations="translations" pos="144 128" stroke="black" type="label" width="14.5236" height="12.0092" depth="0" valign="baseline" style="math">v</text>
 <text matrix="1 0 0 1 521.462 16" transformations="translations" pos="144 128" stroke="black" type="label" width="15.9432" height="12.0092" depth="0" valign="baseline" style="math">x</text>
-<path layer="P" stroke="black" dash="dashed" arrow="arc/normal">
-480 208 m
-720 208
-864 160 c
-</path>
-<path stroke="black" dash="dashed" arrow="arc/normal">
-160 160 m
-288 112
-480 112 c
-</path>
-<path stroke="black" dash="dashed" arrow="arc/normal">
-480 112 m
-640 112
-672 128 c
-</path>
 <path layer="F" stroke="black" fill="blue" opacity="30%" stroke-opacity="opaque">
 732.917 127.755
 665.95 183.177
@@ -1837,11 +1822,6 @@ h
 425.022 146.229
 437.337 57.7092
 642.088 62.3276 u
-</path>
-<path layer="P" stroke="black" dash="dashed" arrow="arc/normal">
-672 128 m
-560 176
-480 208 c
 </path>
 <path layer="sets" matrix="1 0 0 1 -7.49892 1.85151" stroke="black" fill="red" opacity="30%" stroke-opacity="opaque">
 554.364 246.03
@@ -1865,14 +1845,6 @@ h
 340.097 87.5074
 480 112 c
 </path>
-<path layer="P2" stroke="purple" pen="fat" arrow="arc/normal" opacity="30%" stroke-opacity="opaque">
-480 112 m
-539.176 80.9899
-576.053 149.465
-640 92.8399
-672 128 c
-</path>
-<use layer="uvx" name="mark/disk(sx)" pos="480 112" size="normal" stroke="black"/>
 <path layer="P3" stroke="darkcyan" pen="fat" opacity="30%" stroke-opacity="opaque">
 672 128 m
 529.104 171.642
@@ -1885,9 +1857,37 @@ h
 864 160 c
 </path>
 <use layer="steps_6-15" name="mark/disk(sx)" pos="864 160" size="normal" stroke="black"/>
-<use layer="uvx" name="mark/disk(sx)" pos="672 128" size="normal" stroke="black"/>
-<use name="mark/disk(sx)" pos="480 208" size="normal" stroke="black"/>
+<use layer="uvx" name="mark/disk(sx)" pos="480 208" size="normal" stroke="black"/>
 <text layer="P" matrix="1 0 0 1 107.648 -253.531" transformations="translations" pos="352 288" stroke="black" type="label" width="31.878" height="19.0624" depth="7.98" valign="baseline" style="math">L_p</text>
+<path stroke="black" dash="dashed" arrow="arc/normal">
+160 160 m
+288 112
+480 112 c
+</path>
+<path stroke="black" dash="dashed" arrow="arc/normal">
+672 128 m
+560 176
+480 208 c
+</path>
+<path stroke="black" dash="dashed" arrow="arc/normal">
+480 208 m
+720 208
+864 160 c
+</path>
+<path layer="P2" stroke="purple" pen="fat" arrow="arc/normal" opacity="30%" stroke-opacity="opaque">
+480 112 m
+539.176 80.9899
+576.053 149.465
+640 92.8399
+672 128 c
+</path>
+<use layer="uvx" name="mark/disk(sx)" pos="480 112" size="normal" stroke="black"/>
+<use name="mark/disk(sx)" pos="672 128" size="normal" stroke="black"/>
+<path layer="P" stroke="black" dash="dashed" arrow="arc/normal">
+480 112 m
+640 112
+672 128 c
+</path>
 </page>
 <page title="Złożoność">
 <layer name="alpha"/>
